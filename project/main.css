@@ -1,0 +1,126 @@
+body{
+padding-top: 70px;
+background-color: #E5E4E2;
+
+}
+.navbar{
+  background-color: #C2DFFF;
+  color: #2B65EC;
+}
+#myCarousel{
+  width:100%;
+  padding-top: 100px;
+}
+h2{
+  color:#2B65EC;
+  padding-bottom:0;
+}
+#map1{
+  text-align: center;
+  background-color: #306754;
+  color: #E5E4E2;
+}
+.jumbotron h1 {
+  font-family: 'Vast Shadow', cursive;
+  color: white;
+  margin-bottom: 1em;
+}
+#div{
+display:block;
+width:90%;
+margin:auto;
+}
+#mission {
+  background-color: #C2DFFF;
+  color: #ddd;
+  padding-bottom: 10px;
+}
+#social-buttons {
+  margin-top: 20px;
+}
+.btn-twitter {
+  background-color: #00acee;
+  border-color: #009ad5;
+  color: white;
+}
+.btn-facebook {
+  background-color: #4868ac;
+  border-color: #314776;
+  color: white;
+}
+.btn-pinterest {
+  background-color: #b62f26;
+  border-color: #b62f26;
+  color: white;
+}
+/* .thumbnail{
+  height:100%;
+} */
+.container-food{
+  background-color: white;
+  width: 100%;
+}
+.img{
+    position: relative;
+    float: left;
+    /* width:  200px; */
+    height: 250px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    object-fit: cover;
+    overflow:hidden;
+}
+#page2 * {
+    box-sizing: border-box;
+}
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+#page2 .container {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+#page2 {
+  padding-top: 30px;
+}

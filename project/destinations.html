@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Popular Destinations</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="main.css" rel="stylesheet" type="text/css">
+  <link href="js/bootstrap.js">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <script src="html5countrymapv3/mapdata.js"></script>
+  <script src="html5countrymapv3/countrymap.js"></script>
+ </head>
+<body>
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+      </div>
+      <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+          <li><a href="#buzz">HOME</a></li>
+          <li><a href="#buzz">DESTINATIONS</a></li>
+          <li><a href="#mission">FOOD</a></li>
+          <li><a href="#mission">FESTIVAL</a></li>
+        </ul>
+        </div>
+        </div>
+      </nav>
+      <!-- The four columns -->
+      <div id="page2">
+      <div class="row">
+        <div class="column">
+          <img src="images/goa6.jpg" alt="GOA" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="images/varanasi.jpg" alt="VARANASI" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="images/leh3.jpg" alt="LEH LADDAKH" style="width:100%" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="images/statueofunity.jpg" alt="GUJRAT" style="width:100%" onclick="myFunction(this);">
+        </div>
+      </div>
+      <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:50%">
+        <div id="imgtext"></div>
+      </div>
+      </div>
+      <script>
+      function myFunction(imgs) {
+          var expandImg = document.getElementById("expandedImg");
+          var imgText = document.getElementById("imgtext");
+          expandImg.src = imgs.src;
+          imgText.innerHTML = imgs.alt;
+          expandImg.parentElement.style.display = "block";
+      }
+      </script>
+<!--Map Of India-->
+<div class="map">
+<div class="row">
+  <div class='col-sm-4'>
+    <h3 id="map1">29 States of India</h3>
+    <div class="row1">
+      <div class="col-sm-6">
+        <ul>
+          <li><a id="is1">ANDHRA PRADESH</a></li>
+          <li><a id="is2">ARUNACHAL PRADESH</a></li>
+          <li><a id="is3">ASSAM</a></li>
+          <li><a id="is4">BIHAR</a></li>
+          <li><a id="is5">CHHATISGARH</a></li>
+          <li><a id="is6">GOA</a></li>
+          <li><a id="is7">GUJRAT</a></li>
+          <li><a id="is8">HARYANA</a></li>
+          <li><a id="is9">HIMACHAL PRADESH</a></li>
+          <li><a id="is10">JAMMU & KASHMIR</a></li>
+          <li><a id="is11">JHARKHAND</a></li>
+          <li><a id="is12">KARNATAKA</a></li>
+          <li><a id="is13">KERALA</a></li>
+          <li><a id="is14">MADHYA PRADESH</a></li>
+          <li><a id="is15">MAHARASHTRA</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6">
+        <ul>
+          <li><a id="is16">MANIPUR</a></li>
+          <li><a id="is17">MEGHALAYA</a></li>
+          <li><a id="is18">MIZORAM</a></li>
+          <li><a id="is19">NAGALAND</a></li>
+          <li><a id="is20">ODISHA</a></li>
+          <li><a id="is21">PUNJAB</a></li>
+          <li><a id="is22">RAJASTHAN</a></li>
+          <li><a id="is23">SIKKIM</a></li>
+          <li><a id="is24">TAMILNADU</a></li>
+          <li><a id="is25">TELANGANA</a></li>
+          <li><a id="is26">TRIPURA</a></li>
+          <li><a id="is27">UTTARAKHAND</a></li>
+          <li><a id="is28">UTTAR PRADESH</a></li>
+          <li><a id="is29">WEST BENGAL</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class='col-sm-4'>
+    <div class="viewmap">
+    <h3 id="map1">India</h3>
+    <div id="map"></div>
+    </div>
+  </div>
+  <div class='col-sm-4'>
+    <h3 id="map1">7 Union Territories</h3>
+    <ul>
+      <li><a id="ut1">ANDAMAN AND NICOBAR ISLANDS</a></li>
+      <li><a id="IND2427">CHANDIGARH</a></li>
+      <li><a id="ut3">DADRA AND NAGAR HAVELI</a></li>
+      <li><a id="ut4">DAMAN AND DIU</a></li>
+      <li><a id="ut5">DELHI</a></li>
+      <li><a id="ut6">LAKSHADWEEP</a></li>
+      <li><a id="ut7">PUDUCHERRY</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+      <!-- Footer -->
+      <div id="mission" class='text-center'>
+      <div class="container">
+        <div id='social-buttons'>
+        <button class="btn btn-lg btn-twitter">Twitter</button>
+        <button class="btn btn-lg btn-facebook">Facebook</button>
+        <button class="btn btn-lg btn-pinterest">Pinterest</button>
+        </div>
+      </div>
+      </div>
+    </body>
+  </html>
